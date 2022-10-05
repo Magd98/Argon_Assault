@@ -53,8 +53,7 @@
     <UnityVersion>2019.4.35f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\epyphany\demo\ressources\move.cs" />
-    <Compile Include="Assets\epyphany\demo\ressources\rotate.cs" />
+    <Compile Include="Assets\MusicHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\epyphany\ReadMe.txt" />
