@@ -512,7 +512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   circuit: {fileID: 600834095}
-  lookAheadForTargetOffset: 5
+  lookAheadForTargetOffset: 1
   lookAheadForTargetFactor: 0.1
   lookAheadForSpeedOffset: 10
   lookAheadForSpeedFactor: 0.2
@@ -723,9 +723,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06f1f7de3c525694bad1447dc479d015, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xSpeed: 20
+  Speed: 20
   xRange: 5.13
   yRange: 2.74
+  positionPitchFactor: -5
+  controlPitchFactor: -25
+  positionYawFactor: 5
+  controlRollFactor: -25
 --- !u!1001 &8851890744937967831
 PrefabInstance:
   m_ObjectHideFlags: 0
