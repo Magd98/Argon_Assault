@@ -248,6 +248,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 2954841536179841134, guid: 05b8297af31434a419bb16894c0908eb,
     type: 3}
   spawnAtRuntime: {fileID: 1008813142}
+  scorePerHit: 50
 --- !u!1 &600834094
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,6 +370,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 2954841536179841134, guid: 05b8297af31434a419bb16894c0908eb,
     type: 3}
   spawnAtRuntime: {fileID: 1008813142}
+  scorePerHit: 150
 --- !u!1 &740688777
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,10 +660,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -855,6 +857,7 @@ GameObject:
   - component: {fileID: 1009798057}
   - component: {fileID: 1009798059}
   - component: {fileID: 1009798058}
+  - component: {fileID: 1009798060}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -878,8 +881,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -296, y: -156}
-  m_SizeDelta: {x: -592, y: -363}
+  m_AnchoredPosition: {x: -776, y: -469}
+  m_SizeDelta: {x: -1551.9183, y: -937.95624}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1009798058
 MonoBehaviour:
@@ -900,7 +903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: 123456789
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -909,8 +912,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190330
+  m_fontColor: {r: 0.9811321, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -927,15 +930,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -963,7 +966,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 4.3078613, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -977,6 +980,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1009798056}
   m_CullTransparentMesh: 0
+--- !u!114 &1009798060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009798056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bead03c070b3f64e992931b5bd8bb7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1021730117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1437263636933162, guid: 8584316ecc4fc3c49a3ba8130275e439,
@@ -998,6 +1013,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 2954841536179841134, guid: 05b8297af31434a419bb16894c0908eb,
     type: 3}
   spawnAtRuntime: {fileID: 1008813142}
+  scorePerHit: 50
 --- !u!1 &1034959643
 GameObject:
   m_ObjectHideFlags: 0
@@ -1079,6 +1095,7 @@ MonoBehaviour:
   enemyDeathFX: {fileID: 2954841536179841134, guid: 05b8297af31434a419bb16894c0908eb,
     type: 3}
   spawnAtRuntime: {fileID: 1008813142}
+  scorePerHit: 150
 --- !u!1 &1384405998
 GameObject:
   m_ObjectHideFlags: 0
