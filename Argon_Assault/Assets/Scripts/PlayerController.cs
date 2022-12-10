@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float positionYawFactor = 5f;
     [SerializeField] float controlRollFactor = -25f;
 
+    [SerializeField] GameObject[] guns;
+
     float xThrow, yThrow;
     bool isControlEnabled = true;
     // Start is called before the first frame update
@@ -33,8 +35,10 @@ public class PlayerController : MonoBehaviour
         {
             ProcessTranslation();
             ProcessRotation();
+            ProcessFiring();
         }
     }
+
     void OnPlayerDeath()
     {
         print("Player Controls Frozen");
@@ -68,4 +72,28 @@ public class PlayerController : MonoBehaviour
         float clampedYPos = Mathf.Clamp(RawYPos, -yRange, yRange);
         transform.localPosition = new Vector3(clampedXPos, clampedYPos, transform.localPosition.z);
     }
+
+     void ProcessFiring()
+    {
+        if (CrossPlatformInputManager.GetButton("Fire"))
+        {
+            SetActiveGuns(true);
+        }
+        else
+        {
+            SetActiveGuns(false);
+        }
+    }
+
+     void SetActiveGuns(bool isActive)
+    {
+       foreach(GameObject gun in guns)
+        {
+            var emissionModule = gun.GetComponent<ParticleSystem>().emission;
+            emissionModule.enabled = isActive; 
+        }
+
+    }
+
+    
 }
